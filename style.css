@@ -1,0 +1,7 @@
+background {
+  background-image: url ("travel.jpg");
+  background-repeat: no-repeat;
+  beackground-size: cover;
+  backgorund-attachment: fixed;
+  background-position: center center;
+}
