@@ -33,7 +33,7 @@
 
 /*images sizing starts*/
 <style>
-  .gallery-photo {
+  .images {
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -41,7 +41,8 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
 </style>
-
+      <img src= "images/20251031_114556.jpg" class= "images" alt="Photo 1">
+       <img src="images/IMG-20251112-WA0017.jpg" class ="images" alt="Photo 2">
 
 /*images sizing ends*/
 
