@@ -32,5 +32,16 @@
 
 
 /*images sizing starts*/
+<style>
+  .gallery-photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;  /* rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+</style>
 
+
+/*images sizing ends*/
 
