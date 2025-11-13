@@ -35,7 +35,7 @@
   .images {
     width: 70%;
     max-width: 400px;
-    height: 70%;
+    height: auto;
     border-radius: 3px;  /* rounded corners */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
