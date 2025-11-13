@@ -43,3 +43,37 @@
   }
 /*images sizing ends*/
 
+
+/* Card container */
+.card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 20px;
+}
+
+/* Image styling */
+.card img {
+  width: 100%;
+  transform: rotate(90deg); /* rotates the image sideways */
+  transform-origin: center; /* rotates around the center */
+  display: block;
+}
+
+/* Text content inside the card */
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.card-content p {
+  color: gray;
+  font-size: 14px;
+}
