@@ -56,7 +56,7 @@
 /* Image styling */
 .card img {
   width: 100%;
-  transform: 
+  transform: rotate(90deg)
   transform-origin: center; /* rotates around the center */
   display: block;
 }
