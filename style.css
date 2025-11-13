@@ -59,12 +59,14 @@
 .card img {
   width: 100%;
   transform-origin: center; /* rotates around the center */
+   transform: rotate(90deg);
   display: block;
 }
 
 /* Text content inside the card */
 .card-content {
   padding: 10px;
+   transform: rotate(180deg);
 }
 
 .card-content h3 {
