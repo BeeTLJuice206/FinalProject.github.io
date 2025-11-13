@@ -7,7 +7,7 @@
 /* BUTTON STARTS */
 .button {  
   color: white;
-  border: 6px solid rgb(250, 250, 190);
+  border: 6px solid rgb(255, 223, 0);
   border-radius: 5px;
   padding: 28px 46px;
   display: inline-block;
@@ -15,13 +15,13 @@
   font-size: 40px;
   letter-spacing: 1px;
   cursor: pointer;
-  box-shadow: inset 0 0 0 0 #008CBA;
+  box-shadow: inset 0 0 0 0 #FFFFE0;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;
 }
 .slide_left:hover {
-  box-shadow: inset 0 0 0 50px #008CBA;
+  box-shadow: inset 0 0 0 60px #FFFFE0;
 }
 #outer {
   width: 364px;
