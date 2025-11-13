@@ -52,6 +52,7 @@
   font-family: Arial, sans-serif;
   background-color: white;
   margin: 50px;
+  transform: rotate(90deg);
 }
 
 /* Image styling */
