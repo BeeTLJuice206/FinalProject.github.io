@@ -44,7 +44,7 @@
 
 /* Card container sizing*/
 .card {
-  width: 800px; transform: rotate(90deg);
+  width: 800px;
   border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
