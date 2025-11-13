@@ -35,7 +35,7 @@
   .images {
     width: 70%;
     max-width: 400px;
-    height: auto;
+    height: 70%;
     border-radius: 3px;  /* rounded corners */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
@@ -48,7 +48,6 @@
   border-radius: 70px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-   transform: rotate(90deg)
   font-family: Arial, sans-serif;
   background-color: white;
   margin: 50px;
@@ -59,14 +58,12 @@
 .card img {
   width: 100%;
   transform-origin: center; /* rotates around the center */
-   transform: rotate(90deg);
   display: block;
 }
 
 /* Text content inside the card */
 .card-content {
   padding: 10px;
-   transform: rotate(180deg);
 }
 
 .card-content h3 {
