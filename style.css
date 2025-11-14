@@ -30,16 +30,33 @@
 }
 /*BUTTON FINISHES*/ 
 
+*{
+  margin:0;
+  padding:0
+  box-sizing: boarder-box;
+  font-family: 'poppins', sans serif;
+  
 
-/*images sizing starts*/
-  .images {
-    width: 70%;
-    max-width: 400px;
-    height: 70%;
-    border-radius: 2px;  /* rounded corners */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  }
-/*images sizing ends*/
+section.card.image{ 
+ hieght: 140px;
+  width: 140px;
+  border-radius: 50%
+  padding: 3px
+  background : #7d2ae8;
+}
+
+section.card.image img{ 
+ hieght: 100%;
+  width: 100%;
+  object-fit: cover;
+  border radius: 50%;
+  border:3px solid #fff
+
+}
+
+
+
+
 
 
 /* Card container sizing*/
@@ -75,6 +92,9 @@
   font-size: 14px;
 }
 
+
+
+
 /*stars*/
 
 <style>
@@ -85,6 +105,10 @@
 </style>
 
 /*stars close*/ 
+
+
+
+
 
 /*Second button */
 .btns {  
