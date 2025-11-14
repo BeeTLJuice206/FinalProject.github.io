@@ -1,72 +1,85 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-      <title>Travel Secure</title>
-      <meta chatset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <style>
-          body {
-          background-image: url("travel.jpg");
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
-          background-position: center center;
-          }
-      </style>
-  </head>
-  <body>    
-<section> 
-  <div class="swiper container"> 
-  <div class="swiper-slide card">
-    <div class="card-content">
+<head>
+    <title>Travel Secure</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-        <div class="image">
-            <img src="images/20251031_114556.jpg" alt="Photo 1">
-        </div>
+    <style>
+        body {
+            background-image: url("travel.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+    </style>
+</head>
 
-        <div class="name-profession">
-            <span class="name">Kundai Chatiembwa</span>
-            <span class="profession">Zimbabwean guide</span>
-        </div>
+<body>
 
-        <div class="rating">
-            <span class="stars">★★★★★</span>
-        </div>
+<section>
+    <div class="swiper container">
 
-        <div class="btns">
-            <button><a href="KundaiTravelPage.html">Read More</a></button>
-        </div>
+        <!-- REQUIRED wrapper -->
+        <div class="swiper-wrapper">
+
+            <!-- SLIDE -->
+            <div class="swiper-slide card">
+                <div class="card-content">
+
+                    <div class="image">
+                        <img src="images/20251031_114556.jpg" alt="Photo 1">
+                    </div>
+
+                    <div class="name-profession">
+                        <span class="name">Kundai Chatiembwa</span>
+                        <span class="profession">Zimbabwean guide</span>
+                    </div>
+
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                    </div>
+
+                    <div class="btns">
+                        <button><a href="KundaiTravelPage.html">Read More</a></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div> <!-- end swiper-wrapper -->
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
     </div>
-</div>
-      <div class="swiper-pagination"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
 </section>
-         
-        <!-- Initialize Swiper -->
-  <script type="module">
-    import Swiper from 'swiper/swiper-bundle.mjs';
-    import 'swiper/swiper-bundle.css';
-    var swiper = new Swiper('.swiper', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
+
+<!-- Initialize Swiper -->
+<script type="module">
+import Swiper from 'swiper/swiper-bundle.mjs';
+import 'swiper/swiper-bundle.css';
+
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
         el: '.swiper-pagination',
         clickable: true,
-      },
-      navigation: {
+    },
+    navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-              
-  
+    },
+});
+</script>
+
   
   
 
@@ -80,7 +93,7 @@
 
 
     
-       <Bel>
+       /*<Bel>
         
        <div class="card-content">
       <p><strong>Zimbabwe</strong> • 5d</p>
