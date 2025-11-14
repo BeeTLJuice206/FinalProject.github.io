@@ -29,90 +29,40 @@
   text-align: center;
 }
 /*BUTTON FINISHES*/ 
-
-*{
-  margin:0;
-  padding:0
-  box-sizing: boarder-box;
-  font-family: 'Poppins', sans serif;
-  {
-
-  body{
-    height: 100vh;
-    display: flex;
-    align-items: center ; 
-    justify-content: center;
-    background:#f2f2f2;
-    
-.swiper{
-  width:950px;
-}
-  }
-section.card.image{ 
- hieght: 140px;
-  width: 140px;
-  border-radius: 50%
-  padding: 3px
-  background : #7d2ae8;
+  
+/* Card container */
+.card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  margin: 20px;
 }
 
-section.card.image img{ 
- hieght: 100%;
+/* Image styling */
+.card img {
   width: 100%;
-  object-fit: cover;
-  border radius: 50%;
-  border:3px solid #fff
-
+  transform: rotate(90deg); /* rotates the image sideways */
+  transform-origin: center; /* rotates around the center */
+  display: block;
 }
 
-
-.card{
-  poition:relative;
-  background:#f2f2f2;
-  border-radius:20px;
-  margin:20px 0;
-  width:280px;
-}
-    
-
-.card::before{
-  content:"";
-  position:absolute;
-  height:40%
-  width:100%
-    background:#7d2ae8;
-  border-radius: 20px 20px 0 0;
-}
-  
-.card.card-content{
-  padding:30px;
-  display:flex;
-  flex-direction:column;
-  align-items:center ;
-  padding:30px;
-  position:relative;
-  z-index:100;
+/* Text content inside the card */
+.card-content {
+  padding: 10px;
 }
 
-.card.name-profession{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  margin-top:10px;
-  color:#333;
+.card-content h3 {
+  margin: 5px 0;
+  font-size: 18px;
 }
 
-.name-profession.name{
-  font-size:20px;
-  font-weight:600;
+.card-content p {
+  color: gray;
+  font-size: 14px;
 }
-  
-.name-profession.profession{
-  font-size:15px;
-  font-weight:500;
-}
-  
-
 /*stars*/
 
 <style>
@@ -155,46 +105,3 @@ section.card.image img{
 }
 /*BUTTON FINISHES*/ 
 
-
-  <!-- Demo styles -->
-  <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
-  </style>
