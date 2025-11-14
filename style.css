@@ -36,7 +36,7 @@
     width: 70%;
     max-width: 400px;
     height: 70%;
-    border-radius: 3px;  /* rounded corners */
+    border-radius: 2px;  /* rounded corners */
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
 /*images sizing ends*/
@@ -75,8 +75,18 @@
   font-size: 14px;
 }
 
+/*stars*/
+
+<style>
+  .stars {
+    color: gold;
+    font-size: 40px;
+  }
+</style>
+
+/*stars close*/ 
+
 /*Second button */
-/* BUTTON STARTS */
 .btns {  
   color: white;
   border: 1px solid rgb(255, 223, 0);
