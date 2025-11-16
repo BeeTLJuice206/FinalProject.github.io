@@ -12,7 +12,7 @@ body {
 }
 
 body > *:not(.footer-container) {
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .footer-container {
