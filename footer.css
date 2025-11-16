@@ -5,7 +5,18 @@
   font-family: Times New Roman, Monaco, monospace;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > *:not(.footer-container) {
+  flex-shrink: 0;
+}
+
 .footer-container {
+  margin-top: auto;  /* Empuja el footer hasta abajo */
   background-color: #BFF4FF;
   padding-bottom: 4rem 0 2rem 0;
 }
