@@ -1,9 +1,3 @@
-.body {
-  background-image: url ("travel.jpg");
-  beackground-size: cover;
-  backgorund-attachment: fixed;
-  background-position: center center;
-}
 /* BUTTON STARTS */
 .button {  
   color: white;
