@@ -1,2 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swiper Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            background: #f7f7f7;
+            font-family: Arial;
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- SWIPER CONTAINER -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="images/20251031_114556.jpg" alt="1">
+                <h3>Kundai</h3>
+                <p>Zimbabwean Guide</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="images/IMG-20251112-WA0017.jpg" alt="2">
+                <h3>Belen</h3>
+                <p>Mexico Guide</p>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="card">
+                <img src="images/1dece2c8357bdd7cee3b15036344faf5.jpg" alt="3">
+                <h3>Dara</h3>
+                <p>Guide</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- SWIPER JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+</script>
+
+</body>
+</html>
 
 
