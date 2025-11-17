@@ -6,6 +6,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("travel.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Swiper Container */
+        .swiper {
+            width: 100%;
+            max-width: 900px;
+            padding: 50px 20px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Card Styling */
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 100%;
+            max-width: 350px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Image Styling */
+        .image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 5px solid #667eea;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Name and Profession */
+        .name-profession {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .profession {
+            font-size: 16px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Rating Stars */
+        .rating {
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 24px;
+        }
+
+        /* Button Styling */
+        .btns button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+        }
+
+        .btns button:hover {
+            background: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+        }
+
+        .btns button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Swiper Navigation Buttons */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+            background: rgba(255, 255, 255, 0.3);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 20px;
+        }
+
+        /* Pagination Dots */
+        .swiper-pagination-bullet {
+            background: white;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                padding: 20px;
+                max-width: 300px;
+            }
+
+            .image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .name {
+                font-size: 20px;
+            }
+
+            .profession {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
 <!-- SWIPER CONTAINER -->
@@ -16,7 +189,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="images/20251031_114556.jpg" alt="Kundai Chatiembwa">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Kundai Chatiembwa">
                     </div>
                     <div class="name-profession">
                         <span class="name">Kundai Chatiembwa</span>
@@ -36,7 +209,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="images/IMG-20251112-WA0017.jpg" alt="Belen">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="Belen">
                     </div>
                     <div class="name-profession">
                         <span class="name">Belen</span>
@@ -56,7 +229,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="images/1dece2c8357bdd7cee3b15036344faf5.jpg" alt="Dara">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" alt="Dara">
                     </div>
                     <div class="name-profession">
                         <span class="name">Dara</span>
@@ -71,22 +244,22 @@
                 </div>
             </div>
         </div>
-          <!-- CARD 4 -->
+        <!-- CARD 4 -->
         <div class="swiper-slide">
             <div class="card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="images/1dece2c8357bdd7cee3b15036344faf5.jpg" alt="Mursal">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" alt="Fourth Guide">
                     </div>
                     <div class="name-profession">
-                        <span class="name">Mursal Karimzada</span>
-                        <span class="profession">... guide</span>
+                        <span class="name">New Guide</span>
+                        <span class="profession">Travel guide</span>
                     </div>
                     <div class="rating">
                         <span class="stars">★★★★★</span>
                     </div>
                     <div class="btns">
-                        <button><a href="MursalTravelPage.html">Read More</a></button>
+                        <button><a href="FourthGuide.html">Read More</a></button>
                     </div>
                 </div>
             </div>
@@ -127,6 +300,5 @@
 </script>
 </body>
 </html>
-
 
 
