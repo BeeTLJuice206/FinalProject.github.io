@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
+       <header class="topbar">
+        <div class="logo-area">
+            <img 
+                src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=200" 
+                alt="Logo" 
+                class="logo">
+            <span class="site-name">Travel Secure</span>
+        </div>
+
+        <div class="search-area">
+            <input type="text" placeholder="Search destinations..." class="search-input">
+        </div>
+
+        <div class="menu-icon" id="menuToggle">☰</div>
+    </header>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="index.html">Home</a>
+        <a href="guides.html">Guides</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <h1>Welcome to Travel Secure</h1>
+        <p>Your adventure starts here!</p>
+    </div>
 <!-- SWIPER CONTAINER -->
 <div class="swiper">
     <div class="swiper-wrapper">
@@ -100,7 +128,6 @@
 </div>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
     const swiper = new Swiper('.swiper', {
         loop: true,
         slidesPerView: 1,
@@ -124,6 +151,19 @@
             }
         }
     });
+     <script>
+        // Dropdown toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Search logic
+        document.querySelector('.search-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && this.value.trim()) {
+                alert('Searching for: ' + this.value);
+            }
+        });
 </script>
 </body>
 </html>
