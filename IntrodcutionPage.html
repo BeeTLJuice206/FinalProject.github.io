@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-       <header class="topbar">
+<body>
+        <header class="topbar">
         <div class="logo-area">
-            <img 
-                src="" 
-                alt="Logo" 
-                class="logo">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=200" alt="Logo" class="logo">
             <span class="site-name">Travel Secure</span>
         </div>
 
@@ -22,21 +21,14 @@
 
         <div class="menu-icon" id="menuToggle">☰</div>
     </header>
-<body>
-    <!-- Dropdown Menu -->
+
+    <!-- 🔹 DROPDOWN MENU -->
     <div class="dropdown-menu" id="dropdownMenu">
         <a href="index.html">Home</a>
         <a href="guides.html">Guides</a>
         <a href="contact.html">Contact</a>
     </div>
-
-    <!-- Page Content -->
-    <div class="content">
-        <h1>Welcome to Travel Secure</h1>
-        <p>Your adventure starts here!</p>
-    </div>
-    <link rel="stylesheet" href="style.css">
-</head>
+    
 <!-- SWIPER CONTAINER -->
 <div class="swiper">
     <div class="swiper-wrapper">
@@ -100,17 +92,11 @@
                 </div>
             </div>
         </div>
-         <!-- CARD 4-->
         <!-- CARD 4 -->
         <div class="swiper-slide">
             <div class="card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="images/IMG-20251112-WA0017.jpg" alt="Belen">
-                    </div>
-                    <div class="name-profession">
-                        <span class="name">Belen</span>
-                        <span class="profession">Mexico guide</span>
                         <img src="images/IMG-20251117-WA0004%20(1).jpg" alt="Mursal">
                     </div>
                     <div class="name-profession">
@@ -121,14 +107,12 @@
                         <span class="stars">★★★★★</span>
                     </div>
                     <div class="btns">
-                        <button><a href="BelenTravelPage.html">Read More</a></button>
                         <button><a href="MusralTravelPage.html">Read More</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
     <!-- SLIDER BUTTONS -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -165,21 +149,9 @@
             }
         }
     });
-     <script>
-        // Dropdown toggle
-        document.getElementById('menuToggle').addEventListener('click', function() {
-            const menu = document.getElementById('dropdownMenu');
-            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Search logic
-        document.querySelector('.search-input').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter' && this.value.trim()) {
-                alert('Searching for: ' + this.value);
-            }
-        });
 </script>
 </body>
 </html>
+
 
 
