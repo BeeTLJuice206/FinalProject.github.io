@@ -127,6 +127,16 @@
             const menu = document.getElementById('dropdownMenu');
             menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
         });
+    // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('dropdownMenu');
+            const menuToggle = document.getElementById('menuToggle');
+            
+            if (!menuToggle.contains(event.target) && !menu.contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
+
     const swiper = new Swiper('.swiper', {
         loop: true,
         slidesPerView: 1,
