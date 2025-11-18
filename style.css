@@ -274,3 +274,140 @@
         }
     </style>
 /* Webiste cards on seocnd page with sliding starts */
+
+
+
+/* naviagation coding */
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* Navigation Bar Styling */
+        .topbar {
+            background: #007bff;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Logo Area */
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
+        .site-name {
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        /* Search Area */
+        .search-area {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 25px;
+            padding: 5px 10px;
+            flex: 0 1 400px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-input {
+            border: none;
+            outline: none;
+            padding: 8px 15px;
+            flex: 1;
+            font-size: 16px;
+            background: transparent;
+            border-radius: 25px;
+        }
+
+        /* Menu Icon */
+        .menu-icon {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: transform 0.3s;
+        }
+
+        .menu-icon:hover {
+            transform: rotate(90deg);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .topbar {
+                padding: 12px 15px;
+            }
+
+            .site-name {
+                font-size: 20px;
+            }
+
+            .logo {
+                width: 40px;
+                height: 40px;
+            }
+
+            .search-area {
+                flex: 0 1 200px;
+            }
+
+            .search-input {
+                font-size: 14px;
+                padding: 6px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .search-area {
+                display: none;
+            }
+
+            .site-name {
+                font-size: 18px;
+            }
+        }
+
+        /* Demo Content */
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #666;
+            font-size: 18px;
+        }
+    </style>
+/*naviagtion coding */
