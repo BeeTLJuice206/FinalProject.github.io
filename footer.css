@@ -17,14 +17,14 @@ body > *:not(.footer-container) {
 
 .footer-container {
   margin-top: auto;  /* Empuja el footer hasta abajo */
-  background-color: #BFF4FF;
+  background-color: transparent;
   padding-bottom: 4rem 0 2rem 0;
 }
 
 .footer {
   width: 80%;
   height: 40vh;
-  background-color: #BFF4FF;
+  background-color: transparent;
   color: #420D4B;
   display: flex;
   justify-content: center;

@@ -36,6 +36,29 @@
         <h1>Welcome to Travel Secure</h1>
         <p>Your adventure starts here!</p>
     </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header class="topbar">
+        <div class="logo-area">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=200" alt="Logo" class="logo">
+            <span class="site-name">Travel Secure</span>
+        </div>
+
+        <div class="search-area">
+            <input type="text" placeholder="Search destinations..." class="search-input">
+        </div>
+
+        <div class="menu-icon" id="menuToggle">☰</div>
+    </header>
+
+    <!-- 🔹 DROPDOWN MENU -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <a href="index.html">Home</a>
+        <a href="guides.html">Guides</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
 <!-- SWIPER CONTAINER -->
 <div class="swiper">
     <div class="swiper-wrapper">
@@ -44,7 +67,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="images/20251031_114556.jpg" alt="Kundai Chatiembwa">
+                        <img src="images/20251031_114556.jpg" alt="Kundai Chaatizembwa">
                     </div>
                     <div class="name-profession">
                         <span class="name">Kundai Chatiembwa</span>
@@ -64,7 +87,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="image">
-                        <img src="images/IMG-20251112-WA0017.jpg" alt="Belen">
+                        <img src="images/IMG-20251112-WA0017.jpg"" alt="Belen">
                     </div>
                     <div class="name-profession">
                         <span class="name">Belen</span>
@@ -100,6 +123,7 @@
             </div>
         </div>
          <!-- CARD 4-->
+        <!-- CARD 4 -->
         <div class="swiper-slide">
             <div class="card">
                 <div class="card-content">
@@ -109,12 +133,18 @@
                     <div class="name-profession">
                         <span class="name">Belen</span>
                         <span class="profession">Mexico guide</span>
+                        <img src="images/IMG-20251117-WA0004%20(1).jpg" alt="Mursal">
+                    </div>
+                    <div class="name-profession">
+                        <span class="name">Mursal Kamizada</span>
+                        <span class="profession">...Guide</span>
                     </div>
                     <div class="rating">
                         <span class="stars">★★★★★</span>
                     </div>
                     <div class="btns">
                         <button><a href="BelenTravelPage.html">Read More</a></button>
+                        <button><a href="MusralTravelPage.html">Read More</a></button>
                     </div>
                 </div>
             </div>
@@ -128,6 +158,11 @@
 </div>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+      document.getElementById('menuToggle').addEventListener('click', function () {
+            const menu = document.getElementById('dropdownMenu');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        });
     const swiper = new Swiper('.swiper', {
         loop: true,
         slidesPerView: 1,
@@ -167,6 +202,5 @@
 </script>
 </body>
 </html>
-
 
 
