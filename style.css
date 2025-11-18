@@ -1,4 +1,4 @@
-  /* Card container */
+ /* Card container */
 .card {
   width: 300px;
   border-radius: 10px;
@@ -248,7 +248,7 @@
                 font-size: 14px;
             }
         }
-    </style>
+    </style> 
 /* Webiste cards on seocnd page with sliding starts */
 
 
@@ -388,3 +388,41 @@
     </style>
 /*naviagtion coding */
 /*page of container*/
+/* Make navbar stretch full width */
+.topbar {
+    width: 100%;
+    background-color: #2d7dff; /* your blue */
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Ensure dropdown anchors to right correctly */
+.dropdown-menu {
+    right: 25px;
+}
+
+/* Center page background */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Fix search bar sizing on large screens */
+.search-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    width: 60%;
+    max-width: 350px;
+}
