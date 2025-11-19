@@ -15,7 +15,7 @@
             min-height: 100vh;
         }
 
-        <!-- Navigation Bar Styling -->
+        /* Navigation Bar Styling */
         .topbar {
             width: 100%;
             background: #007bff;
@@ -84,7 +84,7 @@
             transform: rotate(90deg);
         }
 
-        <!-- Dropdown Menu -->
+        /* Dropdown Menu */
         .dropdown-menu {
             display: none;
             flex-direction: column;
@@ -115,7 +115,7 @@
             background: #007bff;
         }
 
-        <!-- Swiper Container -->
+        /* Swiper Container */
         .swiper {
             width: 100%;
             max-width: 1100px;
