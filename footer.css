@@ -25,7 +25,7 @@ body > *:not(.footer-container) {
   width: 80%;
   height: 40vh;
   background-color: transparent;
-  color: #420D4B;
+  color: #B6FFFF;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -43,13 +43,13 @@ body > *:not(.footer-container) {
 }
 
 .footer-heading a {
-  color: black;
+  color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
 }
 
 .footer-heading a:hover {
-  color: red;
+  color: #FF4D4D;
   transition: 0.3s ease-out;
 }
 
