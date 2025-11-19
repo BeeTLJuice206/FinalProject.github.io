@@ -17,7 +17,7 @@
 
         /* Navigation Bar Styling */
         .topbar {
-            width: 100%;
+            width: 60%;
             background: #007bff;
             padding: 15px 30px;
             display: flex;
@@ -91,7 +91,7 @@
             background: #0056b3;
             position: absolute;
             top: 80px;
-            right: 30px;
+            right: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             overflow: hidden;
