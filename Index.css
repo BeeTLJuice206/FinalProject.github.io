@@ -47,3 +47,103 @@ body::before {
   text-align: center;
 }
 /*BUTTON FINISHES*/ 
+
+/* Navigation Bar Styling */
+.topbar {
+    width: 100%;
+    background: #007bff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Area */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.site-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* Search Area */
+.search-area {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 5px 15px;
+    flex: 0 1 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: transform 0.3s;
+}
+
+.menu-icon:hover {
+    transform: rotate(90deg);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background: #0056b3;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 999;
+    min-width: 150px;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: background 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background: #007bff;
+}
