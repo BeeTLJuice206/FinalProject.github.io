@@ -182,3 +182,10 @@ html{
     margin: 40px auto;
     box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
 }
+@media (max-width: 900px) {
+    .wrapper, 
+    .wrapper2,
+    .wrapper3 {
+        width: 90%;
+        padding: 20px;}
+}
