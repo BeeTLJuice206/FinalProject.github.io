@@ -27,6 +27,7 @@ body {
     background: #CE1126;
 }
 
+/*BOXES AFTER TITLE*/
 .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -76,7 +77,7 @@ body {
     line-height: 1.6;
 }
 
-.btn {
+.button {
     display: inline-block;
     padding: 10px 25px;
     background: linear-gradient(135deg, #006847 0%, #008854 100%);
@@ -88,7 +89,7 @@ body {
     border: 2px solid transparent;
 }
 
-.btn:hover {
+.button:hover {
     background: linear-gradient(135deg, #CE1126 0%, #e01530 100%);
     border-color: #FFD700; /*Gold border*/
     transform: scale(1.05);
