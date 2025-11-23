@@ -34,7 +34,7 @@ body {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    background: linear-gradient(135deg, #f4f4f4 0%, #fff5e6 100%); /* Warm background */
+    background: linear-gradient(135deg, #f4f4f4 0%, #fff5e6 100%); /*background*/
 }
 
 .box {
@@ -43,13 +43,13 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-top: 4px solid #006847; /* Mexican green accent */
+    border-top: 4px solid #006847; /*green accent*/
 }
 
 .box:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(206, 17, 38, 0.2); /* Red shadow on hover */
-    border-top-color: #CE1126; /* Changes to Mexican red */
+    box-shadow: 0 8px 25px rgba(206, 17, 38, 0.2); /*shadow on hover*/
+    border-top-color: #CE1126;
 }
 
 .box img {
@@ -60,11 +60,11 @@ body {
 
 .box-content {
     padding: 25px;
-    background: linear-gradient(to bottom, white 0%, #fffbf5 100%); /* Subtle warm tint */
+    background: linear-gradient(to bottom, white 0%, #fffbf5 100%);
 }
 
 .box-content h3 {
-    color: #006847; /* Mexican green for headings */
+    color: #006847; /*green for headings*/
     margin-bottom: 15px;
     font-size: 1.4rem;
     font-weight: bold;
@@ -79,7 +79,7 @@ body {
 .btn {
     display: inline-block;
     padding: 10px 25px;
-    background: linear-gradient(135deg, #006847 0%, #008854 100%); /* Mexican green gradient */
+    background: linear-gradient(135deg, #006847 0%, #008854 100%);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -89,7 +89,7 @@ body {
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #CE1126 0%, #e01530 100%); /* Mexican red on hover */
-    border-color: #FFD700; /* Gold border for extra flair */
+    background: linear-gradient(135deg, #CE1126 0%, #e01530 100%);
+    border-color: #FFD700; /*Gold border*/
     transform: scale(1.05);
 }
