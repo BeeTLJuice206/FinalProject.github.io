@@ -448,13 +448,6 @@
                 border: 2px solid #FCDD09;
             }
 
-            .quick-links {
-                flex-direction: column;
-            }
-
-            .quick-link {
-                width: 100%;
-                text-align: center;
             }
         }
 
