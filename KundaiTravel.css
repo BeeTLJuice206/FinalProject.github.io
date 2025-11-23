@@ -1,4 +1,5 @@
- <style>
+
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -9,7 +10,7 @@
             font-family: Georgia, 'Times New Roman', serif;
             line-height: 1.8;
             color: #2c3e50;
-            background: #f9f9f9;
+            background: #f4f4f4;
         }
 
         /* Zimbabwe Flag Banner */
@@ -33,16 +34,17 @@
             background: #DC2428;
         }
 
-        /* Hero Section */
+        /* Hero Section with Image */
         .hero {
             position: relative;
-            height: 600px;
-            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+            height: 500px;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                         url('https://images.unsplash.com/photo-1484318571209-661cf29a69c3?w=1600') center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            border-bottom: 8px solid #FCDD09;
         }
 
         .hero-content {
@@ -52,131 +54,171 @@
         }
 
         .hero-title {
-            font-size: 64px;
+            font-size: 56px;
             font-weight: bold;
             margin-bottom: 20px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
             line-height: 1.2;
         }
 
         .hero-subtitle {
-            font-size: 24px;
+            font-size: 22px;
             font-style: italic;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 30px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #DC2428;
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(220, 36, 40, 0.4);
-        }
-
-        .cta-button:hover {
-            background: #b81d20;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(220, 36, 40, 0.6);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
         /* Main Content */
         .container {
             max-width: 900px;
-            margin: 60px auto;
-            padding: 0 30px;
+            margin: -50px auto 60px;
+            padding: 0 20px;
         }
 
         .article-card {
             background: white;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 60px 80px;
-            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            padding: 60px 70px;
+            border: 3px solid #FCDD09;
         }
 
-        /* Content centered */
-        .article-content {
-            text-align: center;
+        /* Section Styling */
+        .section {
+            margin-bottom: 60px;
         }
 
-        .article-content h2 {
-            font-size: 42px;
+        .section-title {
+            font-size: 36px;
+            font-weight: 600;
             color: #00843D;
-            margin: 50px 0 30px;
-            line-height: 1.3;
-            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 3px solid #FCDD09;
+            padding-bottom: 15px;
         }
 
-        .article-content h2:first-child {
-            margin-top: 0;
-        }
-
-        .article-content h3 {
-            font-size: 28px;
+        /* Drop Cap for first paragraph */
+        .intro-text:first-of-type::first-letter {
+            font-size: 72px;
+            line-height: 60px;
+            float: left;
+            font-weight: bold;
             color: #DC2428;
-            margin: 35px 0 20px;
-            font-weight: 600;
+            margin-right: 10px;
+            margin-top: 5px;
         }
 
-        .article-content p {
-            margin-bottom: 25px;
-            color: #34495e;
+        /* Text Content - Centered */
+        .intro-text {
             font-size: 18px;
             line-height: 1.9;
+            color: #34495e;
+            margin: 0 auto 25px;
+            max-width: 750px;
             text-align: center;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
-        /* Images centered above text */
+        /* Image with Caption - Centered */
+        .image-container {
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
         .content-image {
             width: 100%;
-            max-width: 700px;
-            height: 400px;
+            height: 450px;
             object-fit: cover;
             border-radius: 12px;
-            margin: 40px auto 30px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            display: block;
+            border: 4px solid #FCDD09;
         }
 
         .image-caption {
-            font-size: 14px;
-            color: #7f8c8d;
+            background: #00843D;
+            color: white;
+            padding: 10px 20px;
+            font-size: 13px;
             font-style: italic;
-            margin-top: -20px;
-            margin-bottom: 30px;
+            margin-top: -5px;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
         }
 
-        /* Highlight Box */
-        .highlight-box {
-            background: linear-gradient(135deg, #00843D 0%, #FCDD09 100%);
-            border-radius: 12px;
-            padding: 40px;
+        .image-subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+            font-style: italic;
+            text-align: center;
+        }
+
+        /* Destinations Grid - Card Structure */
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
             margin: 40px 0;
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
 
-        .highlight-box h3 {
-            color: white;
-            font-size: 32px;
-            margin-bottom: 20px;
+        .destination-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 3px solid #FCDD09;
         }
 
-        .highlight-box p {
-            color: white;
-            font-size: 20px;
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
         }
 
-        /* Info Grid */
+        .destination-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .destination-content {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .destination-content h3 {
+            color: #00843D;
+            font-size: 24px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .destination-content p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+
+        .learn-more {
+            display: inline-block;
+            background: #DC2428;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(220, 36, 40, 0.3);
+        }
+
+        .learn-more:hover {
+            background: #b81d20;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 36, 40, 0.5);
+        }
+
+        /* Info Grid - Card Structure */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -185,27 +227,154 @@
         }
 
         .info-card {
-            background: #f8f9fa;
-            border-left: 5px solid #00843D;
+            background: white;
+            border-left: 6px solid #00843D;
             padding: 25px;
             border-radius: 8px;
-            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #FCDD09;
+            border-left: 6px solid #00843D;
         }
 
         .info-card h4 {
             color: #DC2428;
             font-size: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-weight: bold;
         }
 
         .info-card ul {
             margin-left: 20px;
-            color: #34495e;
+            color: #444;
         }
 
         .info-card li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Info Box - Enhanced */
+        .info-box {
+            background: #f8f9fa;
+            border: 3px solid #FCDD09;
+            border-left: 6px solid #00843D;
+            padding: 30px;
+            margin: 30px auto;
+            border-radius: 12px;
+            max-width: 750px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #DC2428;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
             font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 15px;
+        }
+
+        .info-box strong {
+            color: #00843D;
+        }
+
+        .info-box a {
+            color: #00843D;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #00843D 0%, #FCDD09 100%);
+            border-radius: 12px;
+            padding: 40px;
+            margin: 40px auto;
+            color: white;
+            text-align: center;
+            max-width: 750px;
+            box-shadow: 0 6px 25px rgba(0, 132, 61, 0.4);
+            border: 4px solid #FCDD09;
+        }
+
+        .highlight-box h3 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+
+        .highlight-box p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Itinerary Box - Card Style */
+        .itinerary-box {
+            background: white;
+            border: 3px solid #FCDD09;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 750px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .itinerary-box h3 {
+            color: #DC2428;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .itinerary-box p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        .itinerary-box strong {
+            color: #00843D;
+            font-weight: bold;
+        }
+
+        /* Call-to-action Button */
+        .cta-button {
+            display: inline-block;
+            background: #DC2428;
+            color: white;
+            padding: 16px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(220, 36, 40, 0.4);
+            margin-top: 20px;
+            border: 2px solid #FCDD09;
+        }
+
+        .cta-button:hover {
+            background: #b81d20;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(220, 36, 40, 0.6);
         }
 
         /* Quick Links */
@@ -219,135 +388,64 @@
 
         .quick-link {
             background: white;
-            border: 2px solid #00843D;
+            border: 3px solid #00843D;
             color: #00843D;
-            padding: 15px 30px;
+            padding: 12px 28px;
             border-radius: 30px;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: bold;
             transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
         }
 
         .quick-link:hover {
             background: #00843D;
             color: white;
             transform: translateY(-3px);
-        }
-
-        /* Destinations Section */
-        .destinations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
-        }
-
-        .destination-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .destination-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .destination-img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .destination-content {
-            padding: 25px;
-            text-align: center;
-        }
-
-        .destination-content h3 {
-            color: #00843D;
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        .destination-content p {
-            font-size: 16px;
-            color: #555;
-            margin-bottom: 20px;
-        }
-
-        .learn-more {
-            display: inline-block;
-            background: #DC2428;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-size: 14px;
-            transition: background 0.3s;
-        }
-
-        .learn-more:hover {
-            background: #b81d20;
+            box-shadow: 0 5px 15px rgba(0, 132, 61, 0.4);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero {
-                height: 450px;
+                height: 400px;
             }
 
             .hero-title {
-                font-size: 42px;
+                font-size: 36px;
             }
 
             .hero-subtitle {
-                font-size: 18px;
+                font-size: 16px;
             }
 
             .article-card {
                 padding: 40px 30px;
+                border: 2px solid #FCDD09;
             }
 
-            .article-content h2 {
-                font-size: 32px;
-            }
-
-            .article-content h3 {
-                font-size: 24px;
-            }
-
-            .article-content p {
-                font-size: 16px;
+            .section-title {
+                font-size: 28px;
             }
 
             .content-image {
-                height: 250px;
+                height: 300px;
+                border: 3px solid #FCDD09;
             }
 
+            .intro-text {
+                font-size: 16px;
+            }
+
+            .destinations-grid,
             .info-grid {
                 grid-template-columns: 1fr;
             }
 
-            .destinations-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 32px;
-            }
-
-            .article-card {
-                padding: 30px 20px;
-            }
-
-            .article-content h2 {
-                font-size: 28px;
+            .destination-card,
+            .info-card {
+                border: 2px solid #FCDD09;
             }
 
             .quick-links {
@@ -359,4 +457,5 @@
                 text-align: center;
             }
         }
-    </style>
+
+   
