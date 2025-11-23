@@ -1,0 +1,21 @@
+body {
+  
+}
+
+/*FLAG*/
+.flag {
+    height: 50px;
+    display: flex;
+}
+.flag-green {
+    flex: 1;
+    background: #006847;
+}
+.flag-white {
+    flex: 1;
+    background: #FFFFFF;
+}
+.flag-red {
+    flex: 1;
+    background: #CE1126;
+}
