@@ -14,6 +14,10 @@ body {
 .flag-white {
     flex: 1;
     background: #FFFFFF;
+    background-image: url('images/flag-banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .flag-red {
     flex: 1;
