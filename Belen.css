@@ -1,5 +1,8 @@
 body {
-  
+    font-family: 'Times New Roman', serif;
+    line-height: 1.8;
+    color: #2c3e50;
+    background: #f4f4f4;
 }
 
 /*FLAG*/
