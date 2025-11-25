@@ -230,12 +230,6 @@ body {
     background-color: #f9f9f9;
 }
 
-.budget-table tbody tr:last-child {
-    background: linear-gradient(to bottom, white 0%, #fffbf5 100%);
-    font-weight: bold;
-    border-top: 2px solid #006847;
-}
-
 @media (max-width: 768px) {
     .budget-table {
         font-size: 14px;
