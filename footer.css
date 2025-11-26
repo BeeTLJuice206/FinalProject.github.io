@@ -18,7 +18,6 @@ body > *:not(.footer-container) {
 .footer-container {
   margin-top: auto;  /* Empuja el footer hasta abajo */
   background-color: #faf8f3;
-  padding: 40px 20px;
   padding-bottom: 4rem 0 2rem 0;
 }
 
