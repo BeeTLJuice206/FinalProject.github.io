@@ -16,14 +16,14 @@ body > *:not(.footer-container) {
 }
 
 .footer-container {
-  margin-top: auto;  /* Empuja el footer hasta abajo */
-  background-color: #faf8f3;
-  padding-bottom: 2rem;
+  margin-top: auto;  /* pushes the footer to the bottom */
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 0 0 0;
 }
 
 .footer {
   width: 80%;
-  height: 40vh;
+  height: 34vh;
   background-color: transparent;
   color: #B6FFFF;
   display: flex;
