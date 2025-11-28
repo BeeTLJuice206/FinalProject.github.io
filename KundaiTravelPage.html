@@ -40,11 +40,15 @@
                     <p>This is my home country .
                         I have witnessed not just the beauty in life that is has offered me but the beauty it has offered towards all those around ,
                     foreigners and locals. To get the full epxerience listen to the song and tag along onto to see what this country has to offer not just you but me.  </p>
+                   
+                    <!-- Song -->
+<audio id="bgMusic" loop>
+    <source src="https://github.com/BeeTLJuice206/FinalProject.github.io/blob/main/media/ytmp3free.cc_oliver-mtukudzi-todii-official-music-video-youtubemp3free.org.mp3" type="audio/mpeg">
+</audio>
+
+<button id="playBtn" onclick="playMusic()">▶️</button>
+<button id="pauseBtn" onclick="pauseMusic()" style="display:none;">⏸️</button>
                      
-                    <audio autoplay loop style="display:none;">
-                    <source src="https://github.com/BeeTLJuice206/FinalProject.github.io/blob/main/media/ytmp3free.cc_oliver-mtukudzi-todii-official-music-video-youtubemp3free.org.mp3" type="audio/mpeg">
-                    </audio>
-                    
                 </div>
             </div>
 
@@ -217,6 +221,22 @@
 
         </div>
     </div>
+<script>
+const music = document.getElementById('bgMusic');
+const playBtn = document.getElementById('playBtn');
+const pauseBtn = document.getElementById('pauseBtn');
 
+function playMusic() {
+    music.play();
+    playBtn.style.display = 'none';
+    pauseBtn.style.display = 'block';
+}
+
+function pauseMusic() {
+    music.pause();
+    pauseBtn.style.display = 'none';
+    playBtn.style.display = 'block';
+}
+</script>
 </body>
 </html>
