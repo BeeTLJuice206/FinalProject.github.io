@@ -443,20 +443,6 @@
             }
         }
 
-   <!-- butoon for song-->
-
-audio {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    display: block;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    outline: none;
-}
-
-audio:hover {
-    box-shadow: 0 6px 15px rgba(206, 17, 38, 0.3);
-}
+ 
 
 
