@@ -445,27 +445,18 @@
 
    <!-- butoon for song-->
 
-#playBtn, #pauseBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #333;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+audio {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    outline: none;
 }
 
-#playBtn:hover, #pauseBtn:hover {
-    background: #555;
-}
-
-#pauseBtn {
-    background: #4CAF50;
+audio:hover {
+    box-shadow: 0 6px 15px rgba(206, 17, 38, 0.3);
 }
 
 
